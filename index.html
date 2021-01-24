@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momontom - Vanilla JS Challenge</title>
+    <link rel="stylesheet" href="style.css">
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <!--greeting-->
+    <link rel="stylesheet" href="greeting/greeting.css">
+    <!--FullCalendar-->
+    <link href='fullcalendar/main.css' rel='stylesheet' />  
+    <!--OpenLayers-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/css/ol.css" type="text/css">
+    <link rel="stylesheet" href="openlayers/map.css">
+    <!--OpenWeatherMap-->
+    <link rel="stylesheet" href="openweathermap/weather.css">
+    <!--clock-->
+    <link rel="stylesheet" href="clock/clock.css">
+    <!--todo-->
+    <link rel="stylesheet" href="todo/todo.css">
+  </head>
+  <body>
+    <div class="left">
+      <div class="outer__box parent">
+        <div class="inner__box1 div1">
+          <div id='calendar'></div>
+        </div>
+        <div class="inner__box1 div2">
+          <div id="map"></div> 
+        </div>
+        <div class="inner__box1 div3">
+          <span>
+            <h3>Pending</h3>
+            <ul id="js-pending"></ul>
+          </span>
+          <span>
+            <h3>Finished</h3>
+            <ul id="js-finished"></ul>
+          </span>
+        </div>
+        <div class="inner__box2 div4">
+          <div class="weather">
+            <div class="js-wxLocation"></div>
+            <div class="js-wxTemp"></div>
+            <div class="js-wxIcon">
+              <img align="left" alt="weather">
+            </div>
+            <div class="js-wxFeelsLike"></div>
+            <div class="js-wxHumidity"></div>
+            <div class="js-wxWind"></div>
+          </div>
+        </div>
+        <div class="inner__box2 div5">
+          <div class="js-clock">
+            <h1 id="js-time"></h1>
+            <h1 id="js-date"></h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="center">
+      <div class="greeting_box">
+        <form class="js-greetingForm greetingForm">
+          <input type="text" placeholder="What's your name?">
+        </form>
+        <marquee class="js-greeting greeting"></marquee>
+      </div>
+      <div class="todo_box">
+        <form id="js-todoForm">
+          <input type="text" placeholder="Add task">
+        </form>
+      </div>
+    </div>   
+    <div class="right">
+      <button id="js-menu">↔</button>
+    </div>
+    <!--greeting-->
+    <script src="greeting/greeting.js"></script>
+    <!--FullCalendar-->
+    <script src='fullcalendar/main.js'></script>
+    <script src="fullcalendar/calendar.js"></script>
+    <!--OpenLayers-->
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/build/ol.js"></script>
+    <script src="openlayers/map.js"></script>
+    <!--OpenWeatherMap-->
+    <script src="openweathermap/weather.js"></script>
+    <!--clock-->
+    <script src="clock/clock.js"></script>
+    <!--todo-->
+    <script src="todo/todo.js"></script>
+    <!--background-->
+    <script src="bg.js"></script>
+  </body>
+</html>

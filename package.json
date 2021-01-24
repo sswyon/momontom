@@ -1,0 +1,16 @@
+{
+  "name": "js-momontom-main",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bg.js",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
+  },
+  "homepage": "https://github.com/sswyon/js-momontom"
+}

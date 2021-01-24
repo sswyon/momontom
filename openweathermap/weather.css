@@ -1,0 +1,20 @@
+.weather {
+  width: 90%;
+  height: 90%;
+  padding: 10px;
+  text-align: left;
+  font-size: 0.8rem;
+  overflow: hidden;
+}
+
+.js-wxLocation{
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+.js-wxIcon{
+  float: right;
+}
+.js-wxTemp {
+  font-weight: bold;
+  font-size: 2.8rem;
+}
